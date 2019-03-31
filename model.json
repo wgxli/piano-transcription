@@ -1,0 +1,120 @@
+{
+    "class_name": "Sequential",
+    "config": [
+        {
+            "class_name": "Permute",
+            "config": {
+                "dtype": "float32",
+                "name": "permute_1",
+                "dims": [2, 1],
+                "trainable": true,
+                "batch_input_shape": [null, 16, 286]
+            }
+        },
+        {
+            "class_name": "Conv1D",
+            "config": {
+                "kernel_regularizer": null,
+                "name": "conv1d_1",
+                "activity_regularizer": null,
+                "use_bias": true,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "activation": "softsign",
+                "trainable": true,
+                "dilation_rate": [1],
+                "padding": "valid",
+                "kernel_constraint": null,
+                "bias_initializer": {
+                    "class_name": "Zeros",
+                    "config": {}
+                },
+                "strides": [3],
+                "filters": 1024,
+                "kernel_size": [256],
+                "kernel_initializer": {
+                    "class_name": "VarianceScaling",
+                    "config": {
+                        "distribution": "uniform",
+                        "mode": "fan_avg",
+                        "scale": 1.0,
+                        "seed": null
+                    }
+                }
+            }
+        },
+        {
+            "class_name": "Dense",
+            "config": {
+                "kernel_regularizer": null,
+                "name": "dense_1",
+                "activity_regularizer": null,
+                "use_bias": true,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "activation": "softsign",
+                "trainable": true,
+                "units": 256,
+                "kernel_initializer": {
+                    "class_name": "VarianceScaling",
+                    "config": {
+                        "distribution": "uniform",
+                        "mode": "fan_avg",
+                        "scale": 1.0,
+                        "seed": null
+                    }
+                },
+                "kernel_constraint": null,
+                "bias_initializer": {
+                    "class_name": "Zeros",
+                    "config": {}
+                }
+            }
+        },
+        {
+            "class_name": "Dense",
+            "config": {
+                "kernel_regularizer": null,
+                "name": "dense_2",
+                "activity_regularizer": null,
+                "use_bias": true,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "activation": "sigmoid",
+                "trainable": true,
+                "units": 8,
+                "kernel_initializer": {
+                    "class_name": "VarianceScaling",
+                    "config": {
+                        "distribution": "uniform",
+                        "mode": "fan_avg",
+                        "scale": 1.0,
+                        "seed": null
+                    }
+                },
+                "kernel_constraint": null,
+                "bias_initializer": {
+                    "class_name": "Zeros",
+                    "config": {}
+                }
+            }
+        },
+        {
+            "class_name": "Permute",
+            "config": {
+                "name": "permute_2",
+                "dims": [2, 1],
+                "trainable": true
+            }
+        },
+        {
+            "class_name": "Flatten",
+            "config": {
+                "name": "flatten_1",
+                "trainable": true
+            }
+        }
+    ],
+    "backend": "tensorflow",
+    "keras_version": "2.0.6"
+}
