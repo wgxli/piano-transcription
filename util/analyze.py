@@ -73,5 +73,5 @@ MIDI_OFFSET = 21
 
 def write_onsets(onsets):
     for time, note in sorted(onsets):
-        frequency = Pitch(midi=note + MIDI_OFFSET).frequency
-        print(f'{time}\t{frequency:.2f}')
+        pitch = Pitch(midi=note + MIDI_OFFSET)
+        print(f'{time:.2f}\t{pitch}')

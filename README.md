@@ -20,7 +20,7 @@ To run the system, execute the following command:
 
 `python3 onsets.py '/path/to/audio.wav'`
 
-The onset times and frequencies of detected notes will be printed to `stdout`.
+The onset times of detected notes will be printed to `stdout`.
 
 Performance
 -----------
