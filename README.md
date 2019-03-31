@@ -1,4 +1,5 @@
 This is a deep-neural-network based piano transcription tool I created back in summer 2017.
+I was selected to present this research at the [2017 Joint Mathematics Meetings](https://jointmathematicsmeetings.org/meetings/national/jmm2017/2180_program_thursday.html).
 
 ![Image of probability piano-roll](https://github.com/wgxli/piano-transcription/raw/master/evaluation-1.png)
 
