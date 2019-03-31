@@ -1,5 +1,7 @@
 This is a deep-neural-network based piano transcription tool I created back in summer 2017.
 
+![Image of probability piano-roll](https://github.com/wgxli/piano-transcription/raw/master/evaluation-1.png)
+
 Requirements
 ------------
 The transcriber requires the following libraries on Python 3, and all their dependencies:
@@ -23,8 +25,9 @@ Performance
 -----------
 Under my own benchmarks, the system achieves an 80% f-measure
 on the MAPS piano dataset,
-which was on par with state-of-the art systems
-(as far as I know) at the time.
+which, to the best of my knowledge,
+was on par with general (i.e. no per-piano fine-tuning)
+state-of-the art systems at the time.
 
 I submitted this system to the
 [2017 MIREX music information retrieval contest](https://www.music-ir.org/mirex/wiki/2017:Multiple_Fundamental_Frequency_Estimation_%26_Tracking_Results_-_MIREX_Dataset).
