@@ -24,7 +24,7 @@ The onset times of detected notes will be printed to `stdout`.
 
 Performance
 -----------
-Under my own benchmarks, the system achieves an 80% f-measure
+Under my own benchmarks (using the standard `mir_eval` tool), the consistently system achieves an 80% f-measure
 on the MAPS piano dataset,
 which, to the best of my knowledge,
 was on par with general (i.e. no per-piano fine-tuning)
@@ -33,6 +33,7 @@ state-of-the art systems at the time.
 I submitted this system to the
 [2017 MIREX music information retrieval contest](https://www.music-ir.org/mirex/wiki/2017:Multiple_Fundamental_Frequency_Estimation_%26_Tracking_Results_-_MIREX_Dataset).
 Unfortunately, it did worse than anticipated, with an f-measure of 36%.
+I suspect this was due to unanticipated audio normalization issues.
 I did not have the time or resources to develop the system further,
 but I hope to continue development at some point.
 
