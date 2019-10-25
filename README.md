@@ -18,7 +18,7 @@ Usage
 -----
 To run the system, execute the following command:
 
-`python3 onsets.py '/path/to/audio.wav'`
+`python3 onsets.py '/path/to/audio.ogg'`
 
 The onset times of detected notes will be printed to `stdout`.
 
