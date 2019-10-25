@@ -56,6 +56,6 @@ of random chords, synthesized with a variety of soundfonts.
 This reduces overfitting dramatically compared to traditional approaches (training over a curated dataset).
 
 More details are available in the [abstract](https://www.music-ir.org/mirex/abstracts/2017/SL1.pdf) for my MIREX submission.
-The dataset is described in more detail in my [paper](https://arxiv.org/abs/1707.08438).
+The dataset is described (with an older version of the DNN model) in more detail in my [paper](https://arxiv.org/abs/1707.08438).
 Please keep in mind that I wrote these papers in high school;
 looking back now, my writing style could use some significant improvements.
