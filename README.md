@@ -24,7 +24,7 @@ The onset times of detected notes will be printed to `stdout`.
 
 Performance
 -----------
-Under my the standard `mir_eval` benchmarks, the system consistently achieves an 80% f-measure
+Under the standard `mir_eval` benchmarks, the system consistently achieves an 80% f-measure
 on the MAPS piano dataset,
 which, to the best of my knowledge,
 was on par with general (i.e. no per-piano fine-tuning)
